@@ -54,6 +54,8 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         //the same class implements the onNavigationItemSelected hence passing this
         navigationView.setNavigationItemSelectedListener(this);
+
+        initiateDisplayContent();
     }
 
     @Override
@@ -117,7 +119,7 @@ public class MainActivity extends AppCompatActivity
     @Override
     protected void onResume() {
         super.onResume();
-        noteRecyclerAdapter.notifyDataSetChanged();
+        //noteRecyclerAdapter.notifyDataSetChanged();
 
 //n
     }
